@@ -1,0 +1,45 @@
+header {
+    background-color: #f2bac9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+    width: 100%;
+    height: 70px;
+    padding: 0%;
+    border-radius: 15px;
+}
+
+
+
+.name {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    color: #f08700;
+}
+
+
+.name:hover {
+    font-size: 40px;
+    color: aqua;
+}
+
+
+@media (max-width: 701px) {
+    header {
+        justify-content: center;
+    }
+    .name {
+        display: none;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+a:hover {
+    color: aquamarine;
+}
