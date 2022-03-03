@@ -14,6 +14,12 @@ header {
     border-radius: 15px;
 }
 
+.boxes {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
 .buts {
     text-decoration: none;
     background-color: #f797b1;
@@ -49,9 +55,9 @@ img {
     padding: 20px;
     margin-top: 30px;
     align-items: center;
-    width: 50%;
-    background-color: #64113F;
-    border-radius: 10px;
+    width: 30%;
+    border: 3px solid #f2bac9;
+    border-radius: 17px;
     transition: 0.3s;
 
 }
@@ -69,6 +75,7 @@ img {
     header {
         justify-content: center;
     }
+
     .name {
         display: none;
     }
