@@ -1,31 +1,38 @@
 body {
-    background-color: #BAD7F2;
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    background-color: #f2bac9;
+    background-color: var(--barras);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0%;
     width: 100%;
     height: 70px;
     padding: 0%;
-    border-radius: 15px;
 }
 
 .boxes {
     display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
     padding: 10px;
     margin: 10px;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
 .buts {
     text-decoration: none;
-    background-color: #f797b1;
+    background-color: var(--botao);
     padding: 14px 25px;
-    font-family: 'Montserrat', sans-serif;
-    color: #006d77;
+    color: var(--texto);
     font-size: 20px;
     transition: 0.3s;
 }
@@ -34,6 +41,7 @@ header {
 .name {
     font-family: 'Shadows Into Light', cursive;
     font-size: 25px;
+    margin-left: 40px;
     color: #f08700;
     transition: 0.3s;
 }
@@ -45,35 +53,48 @@ header {
 }
 
 img {
-    width: 210px;
+    width: 240px;
     height: 160px;
 }
 
 .dogs {
     display: flex;
+    flex-direction: column;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     margin-top: 30px;
     align-items: center;
-    width: 30%;
-    border: 3px solid #f2bac9;
+    justify-content: center;
+    width: 40%;
+    border: 1px solid #f2bac9;
     border-radius: 17px;
     transition: 0.3s;
 
 }
 
+.footer {
+    background-color: var(--barras);
+    color: var(--texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
 .description {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    align-items: center;
+    width: 100%;
+    margin: 20px 10px;
     text-align: justify;
-    font-family: 'Montserrat', sans-serif;
-    color: #0da0ad;
+    color: var(--texto);
 }
 
-@media (max-width: 701px) {
+@media (max-width: 769px) {
     header {
         justify-content: center;
+        height: 290px;
     }
 
     .name {
@@ -82,8 +103,21 @@ img {
 
     .buttons {
         display: flex;
+        height: 100%;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
+    }
+
+    .boxes {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 426px) {
+    img {
+        width: 150px;
+        height: 100px;
     }
 }
 

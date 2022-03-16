@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+    --background: #BAD7F2;
+    --barras: #f2bac9;
+    --botao: #f797b1;
+    --texto: #0da0ad;
+}
